@@ -16,9 +16,8 @@ class floatingPopulationList extends Component {
     }
 
     callFloatPopulListApi = async () => {
-            axios.get('https://api.bigdatahub.co.kr/v1/datahub/datasets/search.json?pid=1002277&'+
-            'TDCAccessKey=f7c857088da5680d9cbbaf992adb71d391250f415151f4fcc7bd0801bb0d7fa4&$count=30', {
-            })
+        axios.get('http://api.bigdatahub.co.kr/v1/datahub/datasets/search.json?pid=1002277&TDCAccessKey=85efb169519196be88bc9e6430ffe7a63a942bebb94e0835db73ea30260b32fb'
+        )
             .then( response => {
                 try {
                     this.setState({ responseFPList: response });
